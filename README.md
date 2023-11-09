@@ -12,35 +12,31 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
 ## Usage
 
-1. Clone the Repository:
-
+1. Clone the Repository from AWS Cloud shell:
    git clone https://github.com/datthu/infinitylabs.git
    cd infinitylabs
    
 2. Initialize Terraform:
-
+   Ensure the Terraform is properly install as per prerequisites
+   cd terraform
    Run the following command to initialize Terraform in your project directory:
    terraform init
 
-3. Configuration:
+3. Terraform Validation:
 
-   Update the variables.tf file with your desired configuration, including AWS region, container image details, and any other variables specific to your application.
+   Run a Terraform plan to check the execution validation:
+   terraform validate
 
-4. Terraform Plan:
-
-   Run a Terraform plan to check the execution plan:
-   terraform plan
-
-5. Terraform Apply:
+7. Terraform Apply:
 
    Apply the Terraform configuration to create the infrastructure:
    terraform apply
 
-6. Access Your Stateless Application:
+8. Access Your Stateless Application:
 
-   After Terraform completes the deployment, it will provide information about the created resources, including the URL for your stateless application. Access your application using this URL.
+   After Terraform completes the deployment, it will provide information about the created resources, including the URL for your stateless application. Access your application using this AWS URL.
 
-7. Terraform Destroy (Optional):
+9. Terraform Destroy (Optional):
 
    To tear down the infrastructure and terminate your application, run the following command:
    terraform destroy
